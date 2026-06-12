@@ -6,14 +6,61 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Title</title>
+    <title>Museum</title>
     <link
       rel="stylesheet"
       href="src/styles/main.scss"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>Hello Mate Academy</h1>
-    <script src="src/scripts/main.js"></script>
+    <header class="header">
+      <a href="#menu" class="header__menu">
+        <img src="src/images/header/menu.svg" alt="Menu button">
+      </a>
+      <div class="header__image">
+        <a href="#" class="header__logo">
+          <img src="src/images/header/logo.svg" alt="Museum logo">
+        </a>
+      </div>
+      <h1 class="header__title">ХУДОЖНІЙ МУЗЕЙ</h1>
+      <a href="#form" class="header__tickets">
+        <p class="header__text">КВИТКИ</p>
+        <span class="header__button"></span>
+      </a>
+      <p class="header__mini-btn">ПОДІЇ</p>
+    </header>
+
+    <aside class="menu" id="menu">
+      <a href="#" class="menu__close">
+        <img src="src/images/header/close.svg" alt="Close menu">
+      </a>
+      <nav class="menu__nav">
+        <ul class="menu__list">
+          <li class="menu__item"><a href="#gallery" class="menu__link">Галерея</a></li>
+          <li class="menu__item"><a href="#events" class="menu__link">Виставки та <br> події</a></li>
+          <li class="menu__item"><a href="#about-us" class="menu__link">Про Нас</a></li>
+          <li class="menu__item"><a href="#contacts" class="menu__link">Контакти</a></li>
+        </ul>
+      </nav>
+      <div class="menu__table">
+        <div class="menu__table__wrapper">
+          <p class="menu__table__title">Графік роботи</p>
+          <ul class="menu__table__list">
+            <li class="menu__table__item"><span class="menu__bold">12:00 — 20:00</span> середа</li>
+            <li class="menu__table__item"><span class="menu__bold">12:00 — 20:00</span> четвер</li>
+            <li class="menu__table__item"><span class="menu__bold">12:00 — 20:00</span> п’ятниця</li>
+            <li class="menu__table__item"><span class="menu__bold">11:00 — 19:00</span> субота</li>
+            <li class="menu__table__item"><span class="menu__bold">11:00 — 19:00</span> неділя</li>
+          </ul>
+        </div>
+        <p class="menu__table__text"><span class="menu__bold">Вихідні:</span> понеділок, вівторок <br> Каса припиняє роботу за 1 годину до закриття музею</p>
+      </div>
+    </aside>
+
+    <main class="main"></main>
+    <footer class="footer"></footer>
   </body>
 </html>
