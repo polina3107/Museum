@@ -45,9 +45,16 @@
 }
 
 @mixin title-style {
+  margin: 0;
+
   font-family: Montserrat, sans-serif;
   font-size: 36px;
   font-weight: 700;
   line-height: 100%;
+  text-align: center;
   letter-spacing: 0%;
+
+  @include tablet {
+    text-align: left;
+  }
 }
