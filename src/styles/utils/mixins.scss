@@ -58,3 +58,40 @@
     text-align: left;
   }
 }
+
+@mixin type-style {
+  margin: 0;
+
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: $c-grey;
+
+  @include tablet {
+    font-size: 14px;
+  }
+}
+
+@mixin date-style {
+  margin: 0;
+
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: $c-green;
+
+  @include tablet {
+    font-size: 14px;
+  }
+}
+
+@mixin name-style {
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+
+  @include tablet {
+    font-size: 36px;
+  }
+}
