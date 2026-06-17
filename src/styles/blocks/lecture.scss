@@ -33,6 +33,8 @@
     background-color: #fff;
     box-shadow: 0 2px 0 0 #1a5a4c40;
 
+    @include hover(scale, 1.05);
+
     @include tablet {
       transform: translateY(-100px);
       width: calc(100% - 200px);
