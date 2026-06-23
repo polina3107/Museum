@@ -46,6 +46,8 @@
 
   &__logo {
     text-decoration: none;
+
+    @include hover(scale, 1.01);
   }
 
   &__title {
@@ -89,7 +91,7 @@
 
     text-decoration: none;
 
-    @include hover(scale, 1.01);
+    @include hover(scale, 1.05);
 
     @include tablet {
       grid-column: 1 / 4;
@@ -104,6 +106,10 @@
       grid-column: 3 / 6;
       margin-top: calc(-655px + 467px);
     }
+  }
+
+  &__hover {
+    @include hover(scale, 1.05);
   }
 
   &__button {

@@ -22,7 +22,11 @@
       </a>
       <div class="header__image">
         <a href="#" class="header__logo">
-          <img src="src/images/header/logo.svg" alt="Museum logo">
+          <img
+          class="header__hover"
+          src="src/images/header/logo.svg"
+          alt="Museum logo"
+          >
         </a>
       </div>
       <h1 class="header__title">ХУДОЖНІЙ МУЗЕЙ</h1>
@@ -41,7 +45,7 @@
         <ul class="menu__list">
           <li class="menu__item"><a href="#gallery" class="menu__link">Галерея</a></li>
           <li class="menu__item"><a href="#events" class="menu__link">Виставки та <br> події</a></li>
-          <li class="menu__item"><a href="#about-us" class="menu__link">Про Нас</a></li>
+          <li class="menu__item"><a href="#form" class="menu__link">Про Нас</a></li>
           <li class="menu__item"><a href="#contacts" class="menu__link">Контакти</a></li>
         </ul>
       </nav>
@@ -147,7 +151,7 @@
         <div class="gallery__slider"></div>
       </section>
 
-      <section class="sub">
+      <section class="sub" id="form">
         <h2 class="sub__title">Підписка</h2>
         <p class="sub__descr">Бути в курсі всіх актуальних подій та останніх новин.</p>
         <form class="sub__form">
@@ -162,6 +166,86 @@
         </form>
       </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer" id="contacts">
+      <div class="footer__top-group">
+        <div class="footer__images">
+          <a href="#" class="footer__logo-link">
+            <img
+            src="src/images/header/logo.svg"
+            alt="Logo"
+            class="footer__image"
+            >
+          </a>
+          <div class="footer__icons">
+            <a
+            href="https://www.facebook.com"
+            class="footer__facebook-link"
+            target="_blank"
+            >
+              <img
+              src="src/images/footer/facebook.svg"
+              alt="Facebook icon"
+              class="footer__facebook-icon"
+              >
+            </a>
+            <a
+            href="https://www.instagram.com"
+            class="footer__insta-link"
+            target="_blank"
+            >
+              <img
+              src="src/images/footer/insta.svg"
+              alt="Insta logo"
+              class="footer__insta-icon"
+              >
+            </a>
+          </div>
+        </div>
+        <div class="footer__table">
+          <p class="footer__table__title">Графік роботи</p>
+          <ul class="footer__table__list">
+            <li class="footer__table__item"><span class="footer__bold">12:00 — 20:00</span> середа</li>
+            <li class="footer__table__item"><span class="footer__bold">12:00 — 20:00</span> четвер</li>
+            <li class="footer__table__item"><span class="footer__bold">12:00 — 20:00</span> п’ятниця</li>
+            <li class="footer__table__item"><span class="footer__bold">11:00 — 19:00</span> субота</li>
+            <li class="footer__table__item"><span class="footer__bold">11:00 — 19:00</span> неділя</li>
+          </ul>
+          <br>
+          <p class="footer__table__text"> Вихідні: понеділок, вівторок <br> Каса припиняє роботу за 1 годину до закриття музею</p>
+        </div>
+        <div class="footer__contacts">
+          <p class="footer__contacts__title">Контакти:</p>
+          <p class="footer__contacts__descr">
+            <a href="https://share.google/tMXcdWXhbrQC3ZGgC"
+            class="footer--a"
+            target="_blank"
+            >вул. М. Грушевського, 6; <br> Київ, 01001 </a><br>
+            <a href="tel:+380442781357" class="footer--a">тел. +38 (044) 278-13-57 </a><br>
+            <a href="tel:+380442787454" class="footer--a">факс +38 (044) 278-74-54 </a><br>
+            <a href="mailto:info@namu.kiev.ua" class="footer--a">e-mail: info@namu.kiev.ua</a>
+          </p>
+        </div>
+        <a href="#" class="footer__up"></a>
+        <div class="footer__line"></div>
+      </div>
+      <div class="footer__bottom-group">
+        <nav class="footer__nav">
+          <ul class="footer__list">
+            <div class="footer__div1">
+              <li class="footer__item footer__item--mod"><a href="#gallery" class="footer__link">Галерея</a></li>
+              <li class="footer__item"><a href="#events" class="footer__link">Виставки та події</a></li>
+            </div>
+            <div class="footer__div2">
+              <li class="footer__item footer__item--mod"><a href="#form" class="footer__link">Про Нас</a></li>
+              <li class="footer__item"><a href="#contacts" class="footer__link">Контакти</a></li>
+            </div>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__copyright">
+        <p class="footer__copyright__par">Designed by Zhyriada Marina</p>
+        <p class="footer__copyright__par">Copyright © 2019. All Rights Reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
