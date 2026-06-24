@@ -14,6 +14,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="icon"
+    href="src/images/header/logo.svg"
+    type="image/svg+xml">
   </head>
   <body>
     <header class="header">
@@ -123,21 +127,33 @@
       <section class="gallery" id="gallery">
         <h2 class="gallery__title">Галерея</h2>
         <div class="gallery__group">
-          <div class="gallery__top-group">
+          <div class="gallery__top-group gallery__slide">
             <img src="src/images/gallery/1.png"
             alt="Gallery photo"
-            class="gallery__image gallery__image--1"
+            class="gallery__image gallery__image--1 slide-image block"
+            >
+            <img src="src/images/gallery/2.png"
+            alt="Gallery photo"
+            class="gallery__image gallery__image--sl slide-image"
             >
             <img src="src/images/gallery/tablet.png"
             alt="Gallery photo"
-            class="gallery__image gallery__image--tablet"
+            class="gallery__image gallery__image--sl slide-image"
+            >
+            <img src="src/images/gallery/4.png"
+            alt="Gallery photo"
+            class="gallery__image gallery__image--sl slide-image"
+            >
+          </div>
+          <div class="gallery__bottom-group">
+            <img src="src/images/gallery/1.png"
+            alt="Gallery photo"
+            class="gallery__image gallery__image--1 gallery__image--11"
             >
             <img src="src/images/gallery/2.png"
             alt="Gallery photo"
             class="gallery__image gallery__image--2"
             >
-          </div>
-          <div class="gallery__bottom-group">
             <img src="src/images/gallery/3.png"
             alt="Gallery photo"
             class="gallery__image gallery__image--3"
@@ -154,7 +170,7 @@
       <section class="sub" id="form">
         <h2 class="sub__title">Підписка</h2>
         <p class="sub__descr">Бути в курсі всіх актуальних подій та останніх новин.</p>
-        <form class="sub__form">
+        <form class="sub__form" onsubmit="this.reset(); return false;">
           <input
           type="email"
           placeholder="E-mail"
@@ -247,5 +263,6 @@
         <p class="footer__copyright__par">Copyright © 2019. All Rights Reserved.</p>
       </div>
     </footer>
+    <script src="src/scripts/main.js"></script>
   </body>
 </html>
